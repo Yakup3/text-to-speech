@@ -1,7 +1,7 @@
 # Text To Speech
 
 ## Description
-This is an website that converts given text to speech.
+This is a website that converts given text to speech.
 
 ## Used Tools
 - React.js
@@ -33,3 +33,4 @@ npm run start
 ## Contributing
 
 If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!, please read [contributing](./CONTRIBUTING.md) before PR.
+You can star ⭐ and fork 🍴this repository on GitHub
