@@ -28,13 +28,17 @@ const Home = () => {
 
   const renderForm = () => {
     return (
-      <form>
+      <div className="form">
         <textarea
-          placeholder={localStrings.placeholder}
+          className="input"
+          placeholder=" "
           required
           onChange={handleOnChange}
         ></textarea>
-      </form>
+        <label className="label" htmlFor="textarea">
+          {localStrings.placeholder}
+        </label>
+      </div>
     );
   };
 
