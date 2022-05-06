@@ -6,19 +6,19 @@ import { localStrings } from "../shared/shared.constants";
 const Home = () => {
   const [text, setText] = useState("");
   const [alert, setAlert] = useState(false);
-  const { speak, cancel } = useSpeechSynthesis();
+  const { speak, cancel, speaking } = useSpeechSynthesis();
 
   const handleOnChange = (e) => {
     setText(e.target.value);
   };
 
-  const handleOnButtonClick = () => {
-    text.trim().length == 0 ? setAlert(true) : setAlert(false);
+  const handleOnSpeakBtnClick = () => {
+    text.trim().length === 0 ? setAlert(true) : setAlert(false);
 
-    speak({ text: text });
+    if (!speaking) speak({ text: text });
   };
 
-  const handleOnCancelClick = () => {
+  const handleOnCancelBtnClick = () => {
     cancel();
   };
 
@@ -49,10 +49,10 @@ const Home = () => {
   const renderButtons = () => {
     return (
       <div className="buttons">
-        <button className="speech" onClick={handleOnButtonClick}>
+        <button className="speech" onClick={handleOnSpeakBtnClick}>
           {localStrings.speech}
         </button>
-        <button className="cancel" onClick={handleOnCancelClick}>
+        <button className="cancel" onClick={handleOnCancelBtnClick}>
           {localStrings.cancel}
         </button>
       </div>

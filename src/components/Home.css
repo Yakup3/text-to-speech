@@ -71,6 +71,7 @@ body {
   max-height: 50vh;
   border-radius: 3px;
   resize: vertical;
+  font-size: 16px;
 }
 
 .input:hover {
