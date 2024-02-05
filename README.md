@@ -1,10 +1,12 @@
 # Text To Speech
 
 ## Description
+
 This is a website that converts given text to speech. \
-To check visit this url: https://text-to-speech-2022.herokuapp.com/
+To check visit this url: https://text-to-speech-yakup3.vercel.app/
 
 ## Used Tools
+
 - React.js
 
 ## How to use
