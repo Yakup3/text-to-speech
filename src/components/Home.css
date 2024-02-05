@@ -117,12 +117,9 @@ body {
   transform: scale(0.98);
 }
 
-.container .speech {
-  background-color: darkolivegreen;
-  color: ghostwhite;
-}
-
-.container .cancel {
-  background: red;
-  color: ghostwhite;
+.container .button {
+  background-color: black;
+  border-radius: 20%;
+  border: solid 1px white;
+  cursor: pointer;
 }
